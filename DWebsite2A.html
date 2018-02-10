@@ -1,0 +1,57 @@
+<html>
+
+<head>
+<script>
+var audio = new Audio('Open_Sound.mp3');
+audio.play();
+
+
+var w = window.prompt ("Do you believe the Duck Army shall conquer?! (answer yes or no)");
+
+console.log(w);
+
+if (w ==="quack"){
+
+  alert ("I hope you are all doing well, for indeed it is a fine day. The sun is shining, the air is crisp, and overall, today is a wonderful day. There is much to do, for human (and duck) lives are short. Make the most of today before there is tomorrow comes. However, apparently you can never be in tomorrow. It is always a just out of reach. Eluding the grasp of man and duck kind.");
+ 
+}
+ 
+else if (w ==="no"){
+  
+  alert("YOU SHALL REGRET THIS!");
+}
+else if (w ==="yes"){
+  alert("YOU ARE NOT A TRUE DUCK ARMY MEMBER! WADDLE AWAY WHILE YOU STILL CAN!!");
+}
+
+
+
+
+
+
+function Duck_Growing(N){
+   var final_size = 33.3;
+   return final_size /(6-N);
+}
+var DUCKIES = document.getElementsByClassName("top_objects")
+for (var loop=1; loop<6; loop++){
+   var size = Duck_Growing (loop)
+DUCKIES[0].style.width = size+"%"
+setTimeout(1)
+}
+</script>
+<style>
+
+	#QUACK{ 
+				font-size:200%;
+				color:blue;
+				text-align:center;
+				text-decoration: underline;
+}
+
+	#BEAK{
+				text-align:center;}
+
+       .top_objects{
+				float:left;
+				display:inline;
