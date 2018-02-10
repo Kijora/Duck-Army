@@ -1,0 +1,19 @@
+<script>
+var w = window.prompt ("Do you believe the Duck Army shall conquer?! (answer yes or no)");
+
+console.log(w);
+
+if (w ==="quack"){
+  alert ("I hope you are all doing well, for indeed it is a fine day. The sun is shining, the air is crisp, and overall, today is a wonderful day. There is much to do, for human (and duck) lives are short. Make the most of today before there is tomorrow comes. However, apparently you can never be in tomorrow. It is always a just out of reach. Eluding the grasp of man and duck kind.");
+ 
+window.location = "file:///C:/Users/PATRON/Downloads/Duck/DWebsite2A.html"
+}
+ 
+else if (w ==="no"){
+  
+  alert("YOU SHALL REGRET THIS!");
+}
+else if (w ==="yes"){
+  alert("I APPRECIATE YOUR ENTHUSIASM, BUT YOU ARE NOT A TRUE DUCK ARMY MEMBER! WADDLE AWAY WHILE YOU STILL CAN!!");
+}
+</script>
