@@ -1,0 +1,22 @@
+<html>
+    <head>
+    <script>
+
+window.onload=function(){
+setTimeout (function(){switch_img("devil_duck.png")},1000);
+   setTimeout (function(){switch_img("death_flames.gif")},2000);
+}
+function switch_img(DOOM){
+        document.getElementById("FLAMES").src="Duck_imgs/"+DOOM;
+}
+    </script>
+    <style>
+       #FLAMES{ width:100%;
+     }
+    </style>
+     </head>
+    <body>
+
+        <img id="FLAMES" src="Duck_imgs/death_flames.gif"/>
+    </body>
+</html>
