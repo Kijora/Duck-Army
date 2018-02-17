@@ -18,6 +18,6 @@ window.location = "https://crazedkitten.github.io/Duck-Army/deathpage.html"
 else if (w ==="yes"){
   alert("I APPRECIATE YOUR ENTHUSIASM, BUT YOU ARE NOT A TRUE DUCK ARMY MEMBER! WADDLE AWAY WHILE YOU STILL CAN!!");
 
-window.location = "https://crazedkitten.github.io/Duck-Army/deathpage.html"
+window.location = "file:///C:/Users/PATRON/Downloads/Duck/deathpage.html"
 }
 </script>
