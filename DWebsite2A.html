@@ -38,10 +38,12 @@ function Duck_Growing(N){
    var final_size = 33.3;
    return final_size /(6-N);
 }
-var DUCKIES = document.getElementsByClassName("top_objects")
+window.onload = function(){
+	var DUCKIES = document.getElementsByClassName("top_objects")
 
-for (var loop = 0; loop < DUCKIES.length; loop++){
-	DUCKIES[loop].style.width = "50%";
+	for (var loop = 0; loop < DUCKIES.length; loop++){
+		DUCKIES[loop].style.width = "50%";
+	}
 }
 
 //for (var loop=1; loop<6; loop++){
