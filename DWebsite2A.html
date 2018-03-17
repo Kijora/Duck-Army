@@ -7,7 +7,7 @@
 		document.getElementById("Comment");
 		var textbox = documnet.getElementById("Comment");
 		alert (textbox.value);
-		return 0;
+		return false;
 	
 	}
 	
@@ -122,7 +122,7 @@ window.onload = StartDA;
 	
 <textarea rows="4" cols="50" id = Comment>
 </textarea>
-	<button onclick = Button_clicked()>
+	<button onclick ="return Button_clicked();">
 		Submit
 	</button>
 </form>
