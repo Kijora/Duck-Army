@@ -4,7 +4,11 @@
 <script>
 	function Button_clicked(){
 		alert("Thanks!!!!!");
+		document.getElementById("Comment");
+		var textbox = documnet.getElementById("Comment");
+		alert (textbox.value);
 		return 0;
+	
 	}
 var audio = new Audio('Open_Sound.mp3');
 audio.play();
@@ -107,7 +111,9 @@ function Duck_Growing(N){
 <p>This is the Duck Army. Our purpose is to eventually conquer the world! You may think that this is ridiculous, that rubber ducks couldn't possibly take over. However you are wrong. Very wrong. We have allies constructing robots for us ducks, and I bet that you see our allies every day. Have you ever seen a goose? Maybe you've seen a real live duck! There are so many more as well. Join us. Join the Duck Army, and when we conquer, you shall be rewarded. For when we take over, it shall be swift. Painless. Our hopes it that no deaths shall come from this invasion. We shall conquer with force if necessary, yet if everyone here could spread the word of our growing power, it may not be needed. It is on this website that we communicate with our allies and plot the demise of our enemies. We console each other in our losses, and celebrate our accomplishments. Whatever comes, we face it with our beaks high. We are the Duck Army. 
 </p>
 </div>
-	
+	<div id = Comments>
+		
+	</div>
 <form>
 	
 <textarea rows="4" cols="50" id = Comment>
