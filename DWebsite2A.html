@@ -10,9 +10,12 @@
 		return 0;
 	
 	}
+	
+function StartDA(){
+}
 var audio = new Audio('Open_Sound.mp3');
 audio.play();
-
+	
 
 var w = window.prompt ("Do you believe the Duck Army shall conquer?! (answer yes or no)");
 
@@ -36,7 +39,7 @@ else if (w ==="yes"){
 else{
 	alert("INCORRECT")
 	window.location = "deathpage.html"
-}
+}}
 
 
 
@@ -60,7 +63,7 @@ function Duck_Growing(N){
 //setTimeout(1000)
 //}
 
-
+window.onload = StartDA;
 </script>
 <style>
 
