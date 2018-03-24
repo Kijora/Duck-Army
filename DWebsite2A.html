@@ -36,10 +36,11 @@ else{
 
 
 	function Button_clicked(){
-		alert("Thanks!!!!!");
+	
 		document.getElementById("Comment");
 		var textbox = document.getElementById("Comment");
-		alert (textbox.value);
+		var commentbox = document.getElementById("Comments");
+		commentbox.innerHTML = textbox.value;
 		return false;
 	
 	}
