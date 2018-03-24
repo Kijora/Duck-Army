@@ -40,8 +40,9 @@ else{
 		document.getElementById("Comment");
 		var textbox = document.getElementById("Comment");
 		var commentbox = document.getElementById("Comments");
-		var newcomment = "<div>"+textbox.value+"</div>"
+		var newcomment = "<div style='border-style:solid;margin:5px'><pre style='font-family:Times New Roman'>"+textbox.value+"</pre></div>"
 		commentbox.innerHTML = commentbox.innerHTML+newcomment;
+		textbox.value = "";
 		return false;
 	
 	}
@@ -122,7 +123,7 @@ window.onload = StartDA;
 	</div>
 <form>
 	
-<textarea rows="4" cols="50" id = Comment>
+<textarea rows="4" id = Comment style = "width:100%">
 </textarea>
 	<button onclick ="return Button_clicked();">
 		Submit
