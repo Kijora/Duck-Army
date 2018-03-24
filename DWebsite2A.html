@@ -40,7 +40,8 @@ else{
 		document.getElementById("Comment");
 		var textbox = document.getElementById("Comment");
 		var commentbox = document.getElementById("Comments");
-		commentbox.innerHTML = textbox.value;
+		var newcomment = "<div>"+textbox.value+"</div>"
+		commentbox.innerHTML = commentbox.innerHTML+newcomment;
 		return false;
 	
 	}
