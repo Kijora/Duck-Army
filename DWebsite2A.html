@@ -31,6 +31,8 @@ var w = window.prompt ("Do you believe the Duck Army shall conquer?! (answer yes
 console.log(w);
 function showcomments (snapshot){ 
 	console.log (snapshot.val())
+	var commentbox = document.getElementById("Comments");
+	commentbox.innerHTML = (snapshot.val.comment))
 }
 if (w ==="quack"){
 
