@@ -9,11 +9,14 @@
 var w = window.prompt ("Do you believe the Duck Army shall conquer?! (answer yes or no)");
 
 console.log(w);
-
+function showcomments (snapshot){ 
+	console.log (snapshot.val())
+}
 if (w ==="quack"){
 
   alert ("I hope you are all doing well, for indeed it is a fine day. The sun is shining, the air is crisp, and overall, today is a wonderful day. There is much to do, for human (and duck) lives are short. Make the most of today before tomorrow comes. However, apparently you can never be in tomorrow. It is always a just out of reach. Eluding the grasp of man and duck kind.");
- 	
+ var databse=firebase.database();
+	database.ref("comments").once("value").then(showcomments);
 function StartDA(){
 var audio = new Audio('Open_Sound.mp3');
 audio.play();
@@ -44,6 +47,7 @@ else{
 		commentbox.innerHTML = commentbox.innerHTML+newcomment;
 		var database = firebase.database();
 		database.ref("comments").set ({comment:newcomment});
+		
 		textbox.value = "";
 		return false;
 	
