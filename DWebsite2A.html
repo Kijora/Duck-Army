@@ -42,6 +42,8 @@ else{
 		var commentbox = document.getElementById("Comments");
 		var newcomment = "<div style='border-style:solid;margin:5px'><pre style='color:blue; font-family:Times New Roman'>"+textbox.value+"</pre></div>"
 		commentbox.innerHTML = commentbox.innerHTML+newcomment;
+		var database = firebase.database();
+		database.ref("comments").set ({comment:newcomment});
 		textbox.value = "";
 		return false;
 	
@@ -69,6 +71,27 @@ function Duck_Growing(N){
 
 window.onload = StartDA;
 </script>
+	
+	
+	
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js">
+</script>
+	<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBELocOV3nri3-uFr6quw07ec95ye0R9GU",
+    authDomain: "duck-army.firebaseapp.com",
+    databaseURL: "https://duck-army.firebaseio.com",
+    projectId: "duck-army",
+    storageBucket: "duck-army.appspot.com",
+    messagingSenderId: "489821502160"
+  };
+  firebase.initializeApp(config);
+</script>
+	
+	
+	
+	
 <style>
 
 	#QUACK{ 
