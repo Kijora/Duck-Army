@@ -22,12 +22,8 @@
 		
 	
 <script>
-
-
 	
-
 var w = window.prompt ("Do you believe the Duck Army shall conquer?! (answer yes or no)");
-
 console.log(w);
 function showcomments (snapshot){ 
 	console.log (snapshot.val())
@@ -35,7 +31,6 @@ function showcomments (snapshot){
 	commentbox.innerHTML = snapshot.val().comment;
 }
 if (w ==="quack"){
-
   alert ("I hope you are all doing well, for indeed it is a fine day. The sun is shining, the air is crisp, and overall, today is a wonderful day. There is much to do, for human (and duck) lives are short. Make the most of today before tomorrow comes. However, apparently you can never be in tomorrow. It is always a just out of reach. Eluding the grasp of man and duck kind.");
  
 function StartDA(){
@@ -59,8 +54,6 @@ else{
 	window.location = "deathpage.html"
 }
 	
-
-
 	function Button_clicked(){
 	
 		document.getElementById("Comment");
@@ -75,32 +68,23 @@ else{
 		return false;
 	
 	}
-
-
-
 function Duck_Growing(N){
    var final_size = 33.3;
    return final_size /(6-N);
 }
-
-
 window.onload = StartDA;
 </script>
 	
 	
 <style>
-
 	#QUACK{ 
 				font-size:200%;
 				color:blue;
 				text-align:center;
 				text-decoration: underline;
 	}
-
-
 		
 		
-
 	#SQUACK{		font-size:150%
 				color:blue;
 				text-align:center;
@@ -109,13 +93,11 @@ window.onload = StartDA;
 	
 	#BEAK{
 				text-align:center;}
-
        .top_objects_debug{
 				float:left;
 				display:inline;
 				width:33.3%;
 	}
-
 	#WEBBED{		text-align:center;
 				color:blue;
 				font-size:100%;
@@ -126,25 +108,21 @@ window.onload = StartDA;
 		
 				body{ background:yellow;
 	}
-<img src="duck picture: https://cdn.pixabay.com/photo/2016/06/22/21/35/toy-1474138_960_720.jpg" alt = "Duck Picture"
+	#img-container{
+		text-align:center;
+
+	}
 </style>
 </head>
-
 <body>
 	
-	<table>
-		<tr>
-			<style = max width 300px>
-			<td width = 33% >
-			<img style = "max-width: 300px" src="Duck_imgs\Duck_img_flip.jpg">
-	
-			</td>
-			<td>
-			<p>THE OFFICIAL DUCK ARMY WEBSITE
+		<div id="img-container">
+			<img style="width:30%; display: inline-block;"  src="Duck_imgs\Duck_img_flip.jpg">
+			<p style="width:30%; display: inline-block;">THE OFFICIAL DUCK ARMY WEBSITE</p>
+			<img style="width:30%; display: inline-block;" src="Duck_imgs\Duck_img.jpg">
 		</div>
 				<div id = "ALLY">
 			
-
 				KNOWN ALLIES:
 			<ul>
 				<li>Cuttlefish
@@ -158,13 +136,7 @@ window.onload = StartDA;
 			</ul>
 			</p>
 		</div>
-			</td>
-			<td width = 30%>
-			<img style = "max-width: 300px" src="Duck_imgs\Duck_img.jpg">
-		</div>
-	</td>
-		</tr>
-	</table>
+
 	<div id = "HEADER">
 		
 		
@@ -172,7 +144,7 @@ window.onload = StartDA;
 		
 	</div>
 <div id="WEBBED">
-<p>This is the Duck Army. Our purpose is to eventually conquer the world! You may think that this is ridiculous, that rubber ducks couldn't possibly take over. However you are wrong. Very wrong. We have allies constructing robots for us ducks, and I bet that you see our allies every day. Have you ever seen a goose? Maybe you've seen a real live duck! There are so many more as well. Join us. Join the Duck Army, and when we conquer, you shall be rewarded. For when we take over, it shall be swift. Painless. Our hopes it that no deaths shall come from this invasion. We shall conquer with force if necessary, yet if everyone here could spread the word of our growing power, it may not be needed. It is on this website that we communicate with our allies and plot the demise of our enemies. We console each other in our losses, and celebrate our accomplishments. Whatever comes, we face it with our beaks high. We are the Duck Army. 
+<p>This is the Duck Army. Our purpose is to eventually conquer the world! You may think that this is ridiculous, that rubber ducks couldn't possibly take over. However you are wrong. Very wrong. We have allies constructing robots for us ducks, and I bet that you see our allies every day. Have you ever seen a goose? Maybe you've seen a real live duck! There are so many more as well. Join us. Join the Duck Army, and when we conquer, you shall be rewarded. Our hope is that no deaths shall come from this invasion. We shall conquer with force if necessary, yet if everyone here could spread the word of our growing power, it may not be needed. It is on this website that we communicate with our allies and plot the demise of our enemies. We console each other in our losses, and celebrate our accomplishments. Whatever comes, we face it with our beaks high. We are the Duck Army. 
 </p>
 </div>
 	<div id = Comments>
@@ -180,12 +152,11 @@ window.onload = StartDA;
 	</div>
 <form>
 	
-<textarea rows="4" id = Comment style = "width:100%">
+<textarea rows="4" id = "Comment" style = "width:100%">
 </textarea>
 	<button onclick ="return Button_clicked();">
 		Submit
 	</button>
 </form>
 </body>
-
 </html>
