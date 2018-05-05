@@ -36,10 +36,10 @@ if (w ==="quack"){
 function StartDA(){
 	var database=firebase.database();
 	database.ref("comments").once("value").then(showcomments);
-var audio = new Audio('Open_Sound.mp3');
-var background = new Audio('Battle_Lines.mp3');
+//var audio = new Audio('Open_Sound.mp3');
+var audio = new Audio('Battle_Lines.mp3');
+//audio.play();
 audio.play();
-background.play();
 }
 }
 else if (w ==="no"){
