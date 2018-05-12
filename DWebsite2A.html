@@ -62,7 +62,7 @@ else{
 		var newcomment = "<div style='border-style:solid;margin:5px'><pre style='color:blue; font-family:Times New Roman'>"+textbox.value+"</pre></div>"
 		commentbox.innerHTML = commentbox.innerHTML+newcomment;
 		var database = firebase.database();
-		database.ref("comments").set ({comment:newcomment});
+		database.ref("comments").set ({comment:commentbox.innerHTML});
 		
 		textbox.value = "";
 		return false;
