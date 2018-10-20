@@ -34,6 +34,8 @@ if (w ==="quack"){
   alert (" YOU ARE WORTHY! I hope you are all doing well, for indeed it is a fine day. The sun is shining, the air is crisp, and overall, today is a wonderful day. There is much to do, for human (and duck) lives are short. Make the most of today before tomorrow comes. However, apparently you can never be in tomorrow. It is always a just out of reach. Eluding the grasp of man and duck kind. Thus, you should make the most of every day!");
  
 function StartDA(){
+	
+alert ("hi")
 	var database=firebase.database();
 	database.ref("comments").on("value", showcomments);
 var audio = new Audio('Battle_Lines.mp3');
