@@ -35,8 +35,17 @@ if (w ==="quack"){
 	
 function StartDA(){
 	
-	var person = prompt("Please enter your name:");
-	var password = prompt("Hello " + person + "! Please enter your password");
+	var email = prompt("Please enter your email:");
+	var password = prompt("Hello " + email + "! Please enter your password");
+	
+	firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+ 		 // Handle Errors here.
+ 		 var errorCode = error.code;
+ 		 var errorMessage = error.message;
+		console.log (errorMessage);
+ 		 // ...
+	});
+	
 	
 	
 	var database=firebase.database();
