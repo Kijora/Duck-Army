@@ -36,7 +36,7 @@ if (w ==="quack"){
 function StartDA(){
 	
 	var email = document.getElementById("username").value;
-	var password = prompt("Hello " + email + "! Please enter your password");
+	var password = document.getElementById("password").value;
 	
 	firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
  		 // Handle Errors here.
@@ -44,7 +44,6 @@ function StartDA(){
  		 var errorMessage = error.message;
 		console.log (errorMessage);
 		alert (errorMessage);
-		StartDA()
  		 // ...
 	});
 	
