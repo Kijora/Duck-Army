@@ -78,7 +78,17 @@ else{
 		var newcomment = "<div style='border-style:solid;margin:5px'><pre style='color:blue; font-family:Times New Roman'>"+textbox.value+"</pre></div>"
 		commentbox.innerHTML = commentbox.innerHTML+newcomment;
 		var database = firebase.database();
-		database.ref("comments").set ({comment:commentbox.innerHTML});
+		database.ref("comments").set ({comment:commentbox.innerHTML},  function(error) {
+    if (error) {
+	    console.log (error)
+	    console.log ("imanerror")
+      // The write failed...
+    } else {
+	    console.log ("yay")
+      // Data saved successfully!
+	   
+    }
+  });
 		
 		textbox.value = "";
 		return false;
